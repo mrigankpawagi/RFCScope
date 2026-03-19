@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RFCScope — Detecting Logical Ambiguities in Internet Protocol Specifications</title>
+  <title>RFCScope: Detecting Logical Ambiguities in Internet Protocol Specifications</title>
   <meta name="description" content="RFCScope is the first automated framework for detecting logical ambiguities (inconsistencies and under-specifications) in IETF RFC protocol specifications, published at ASE 2025." />
   <meta name="author" content="Mrigank Pawagi, Lize Shao, Hyeonmin Lee, Yixin Sun, Wenxi Wang" />
   <meta name="theme-color" content="#1a2744" />
@@ -41,9 +41,6 @@
     <li><a href="#approach">Approach</a></li>
     <li><a href="#results">Results</a></li>
     <li><a href="#errata">Errata</a></li>
-    <li><a href="#authors">Authors</a></li>
-    <li><a href="#cite">Cite</a></li>
-    <li><a href="https://github.com/HIPREL-Group/RFCScope" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
   </ul>
 </nav>
 
@@ -82,6 +79,53 @@
 </section>
 
 <main id="main-content">
+
+<!-- ── AUTHORS ── -->
+<section id="authors" aria-labelledby="authors-title" class="section-centered">
+  <div class="container">
+    <div class="section-label">Authors</div>
+    <h2 class="section-title" id="authors-title">Authors</h2>
+    <div class="authors-grid">
+      <div class="author-card">
+        <a href="https://mrigank.in/" target="_blank" rel="noopener noreferrer" aria-label="Mrigank Pawagi, IISc Bengaluru (opens in new tab)">
+          <div class="author-name">Mrigank Pawagi</div>
+          <div class="author-affil">IISc Bengaluru</div>
+        </a>
+      </div>
+      <div class="author-card">
+        <a href="https://slz2003.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Lize Shao, University of Virginia (opens in new tab)">
+          <div class="author-name">Lize Shao</div>
+          <div class="author-affil">University of Virginia</div>
+        </a>
+      </div>
+      <div class="author-card">
+        <a href="https://hyeonmin-lee.com/" target="_blank" rel="noopener noreferrer" aria-label="Hyeonmin Lee, University of Virginia (opens in new tab)">
+          <div class="author-name">Hyeonmin Lee</div>
+          <div class="author-affil">University of Virginia</div>
+        </a>
+      </div>
+      <div class="author-card">
+        <a href="https://www.cs.virginia.edu/~ys3kz/" target="_blank" rel="noopener noreferrer" aria-label="Yixin Sun, University of Virginia (opens in new tab)">
+          <div class="author-name">Yixin Sun</div>
+          <div class="author-affil">University of Virginia</div>
+        </a>
+      </div>
+      <div class="author-card">
+        <a href="https://wenxiwang.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Wenxi Wang, University of Virginia (opens in new tab)">
+          <div class="author-name">Wenxi Wang</div>
+          <div class="author-affil">University of Virginia</div>
+        </a>
+      </div>
+    </div>
+    <div class="affil-logos">
+      <img src="assets/img/iisc.png" alt="Indian Institute of Science" class="affil-logo" />
+      <img src="assets/img/uva.png" alt="University of Virginia" class="affil-logo" />
+      <a href="https://wenxiwang.github.io/group.html" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/hiprel.png" alt="HIPREL Research Group" class="affil-logo" />
+      </a>
+    </div>
+  </div>
+</section>
 
 <!-- ── MOTIVATION ── -->
 <section id="motivation" aria-labelledby="motivation-title">
@@ -123,10 +167,10 @@
     <div class="section-label">Empirical Study</div>
     <h2 class="section-title" id="study-title">A taxonomy of logical ambiguities</h2>
     <p class="section-desc">
-      Through manual analysis of 273 verified technical errata from Standards Track RFCs (Jan 2014 – Jan 2025), we identified seven fine-grained subtypes of logical ambiguity — the first such taxonomy in the literature.
+      Through manual analysis of 273 verified technical errata from Standards Track RFCs (Jan 2014 – Jan 2025), we identified seven fine-grained subtypes of logical ambiguities in Standards Track RFCs.
     </p>
     <table class="taxonomy-table">
-      <caption>Taxonomy of logical ambiguity subtypes identified from 273 verified errata</caption>
+      <caption>Taxonomy of logical ambiguities identified from 273 verified errata</caption>
       <thead>
         <tr>
           <th scope="col">Category</th>
@@ -307,61 +351,6 @@ DNSSEC validation occurs</mark>...</pre>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- ── AUTHORS ── -->
-<section id="authors" aria-labelledby="authors-title" class="section-centered">
-  <div class="container">
-    <div class="section-label">Team</div>
-    <h2 class="section-title" id="authors-title">Authors</h2>
-    <p class="section-desc section-desc-centered">
-      A collaboration between the Indian Institute of Science and the University of Virginia.
-    </p>
-    <div class="authors-grid">
-      <div class="author-card">
-        <a href="https://mrigank.in/" target="_blank" rel="noopener noreferrer" aria-label="Mrigank Pawagi, IISc Bengaluru (opens in new tab)">
-          <div class="author-initial" aria-hidden="true">MP</div>
-          <div class="author-name">Mrigank Pawagi</div>
-          <div class="author-affil">IISc Bengaluru</div>
-        </a>
-      </div>
-      <div class="author-card">
-        <a href="https://slz2003.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Lize Shao, University of Virginia (opens in new tab)">
-          <div class="author-initial" aria-hidden="true">LS</div>
-          <div class="author-name">Lize Shao</div>
-          <div class="author-affil">University of Virginia</div>
-        </a>
-      </div>
-      <div class="author-card">
-        <a href="https://hyeonmin-lee.com/" target="_blank" rel="noopener noreferrer" aria-label="Hyeonmin Lee, University of Virginia (opens in new tab)">
-          <div class="author-initial" aria-hidden="true">HL</div>
-          <div class="author-name">Hyeonmin Lee</div>
-          <div class="author-affil">University of Virginia</div>
-        </a>
-      </div>
-      <div class="author-card">
-        <a href="https://www.cs.virginia.edu/~ys3kz/" target="_blank" rel="noopener noreferrer" aria-label="Yixin Sun, University of Virginia (opens in new tab)">
-          <div class="author-initial" aria-hidden="true">YS</div>
-          <div class="author-name">Yixin Sun</div>
-          <div class="author-affil">University of Virginia</div>
-        </a>
-      </div>
-      <div class="author-card">
-        <a href="https://wenxiwang.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Wenxi Wang, University of Virginia (opens in new tab)">
-          <div class="author-initial" aria-hidden="true">WW</div>
-          <div class="author-name">Wenxi Wang</div>
-          <div class="author-affil">University of Virginia</div>
-        </a>
-      </div>
-    </div>
-    <div class="affil-logos">
-      <img src="assets/img/iisc.png" alt="Indian Institute of Science" class="affil-logo" />
-      <img src="assets/img/uva.png" alt="University of Virginia" class="affil-logo" />
-      <a href="https://wenxiwang.github.io/group.html" target="_blank" rel="noopener noreferrer">
-        <img src="assets/img/hiprel.png" alt="HIPREL Research Group" class="affil-logo" />
-      </a>
     </div>
   </div>
 </section>

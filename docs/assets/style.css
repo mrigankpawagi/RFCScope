@@ -236,7 +236,7 @@ section.section-bg-white { background: #fff; }
 
 /* ── PIPELINE FIGURE ── */
 .figure-block {
-  background: var(--card-bg);
+  background: #fafbfd;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
@@ -389,18 +389,10 @@ section.section-bg-white { background: #fff; }
 
 /* When side by side, make pie chart match the height of the adjacent figure */
 @media (min-width: 701px) {
-  .results-grid { align-items: stretch; }
-  .results-pie-block {
-    display: flex;
-    flex-direction: column;
-  }
   .results-pie-block img {
-    flex: 1;
-    min-height: 0;
-    object-fit: contain;
+    width: 70%;
     display: block;
-    margin: auto;
-    width: 100%;
+    margin: 0 auto;
   }
 }
 

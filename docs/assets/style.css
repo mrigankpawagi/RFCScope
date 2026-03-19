@@ -402,9 +402,21 @@ section.section-bg-white { background: #fff; }
 /* ── ERRATA CARDS ── */
 .errata-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
   margin-top: 2rem;
+}
+.errata-grid .errata-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  width: calc(50% - 0.625rem);
+  margin: 0 auto;
+}
+@media (max-width: 700px) {
+  .errata-grid { grid-template-columns: 1fr; }
+  .errata-grid .errata-card:last-child:nth-child(odd) {
+    grid-column: auto;
+    width: auto;
+  }
 }
 .errata-card {
   background: var(--card-bg);
@@ -517,7 +529,11 @@ mark.highlight-red {
   padding: 1.25rem;
   box-shadow: var(--shadow);
   transition: box-shadow 0.2s, transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
+.repo-card:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; border-radius: var(--radius); }
 .repo-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
 .repo-card-icon { font-size: 1.5rem; margin-bottom: 0.6rem; }
 .repo-card h3 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 0.35rem; font-family: var(--mono); }

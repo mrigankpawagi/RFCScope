@@ -302,13 +302,12 @@
         </div>
         <div class="errata-card-body">
           <pre><strong>Section 5</strong> (Spec 1):
-...replies with an Access-Accept message
-(possibly after having sent a RADIUS
-<mark class="highlight-red">Access-Challenge</mark> message)...
+
+...replies with an Access-Accept message (possibly after having sent a RADIUS <mark class="highlight-red">Access-Challenge</mark> message)...
 
 <strong>Section 7, Table of Attributes</strong> (Spec 2):
-| Access- | Access- | Access- | <mark class="highlight-red">Challenge</mark> | ...
-| Request | Accept  | Reject  |           | ...</pre>
+
+| Access-Request | ... | <mark class="highlight-red">Challenge</mark> | ...</pre>
           <div class="errata-verified">✓ Officially verified</div>
         </div>
       </div>
@@ -320,9 +319,8 @@
         </div>
         <div class="errata-card-body">
           <pre><strong>Section 1, Introduction</strong>:
-...clarify the allowable values of the
-<mark class="highlight-red">QDCOUNT</mark> parameter in the specific case
-of DNS messages with OPCODE = 0.</pre>
+
+...clarify the allowable values of the <mark class="highlight-red">QDCOUNT</mark> parameter in the specific case of DNS messages with OPCODE = 0.</pre>
           <div class="errata-verified">✓ Officially verified</div>
         </div>
       </div>
@@ -330,16 +328,16 @@ of DNS messages with OPCODE = 0.</pre>
       <div class="errata-card">
         <div class="errata-card-header">
           <span class="errata-id">Errata 8590 &nbsp;·&nbsp; RFC 9704</span>
+
           <span><span class="tag tag-u" style="font-size:0.72rem;">U-4</span> &nbsp;<a href="https://www.rfc-editor.org/errata/eid8590" target="_blank" rel="noopener noreferrer">View ↗</a></span>
         </div>
         <div class="errata-card-body">
           <pre><strong>RFC 9704, Section 6.2</strong> (Spec 1):
-The client performs
-<mark class="highlight-red">full DNSSEC validation locally [RFC6698]</mark>.
+The client performs <mark class="highlight-red">full DNSSEC validation locally [RFC6698]</mark>.
 
-<strong>RFC 6698, Section 1.3</strong> (referenced doc):
-<mark class="highlight-red">This document does not specify how
-DNSSEC validation occurs</mark>...</pre>
+<strong>RFC 6698, Section 1.3</strong> (Spec 2, referenced doc):
+
+<mark class="highlight-red">This document does not specify how DNSSEC validation occurs</mark>...</pre>
           <div class="errata-verified">✓ Officially verified</div>
         </div>
       </div>
@@ -355,26 +353,26 @@ DNSSEC validation occurs</mark>...</pre>
     <h2 class="section-title" id="repo-title">What's in the repository</h2>
     <p class="section-desc">All data, prompts, and code are publicly available to support reproducibility and future research.</p>
     <div class="repo-grid">
-      <div class="repo-card">
+      <a class="repo-card" href="https://github.com/HIPREL-Group/RFCScope/tree/main/studied-errata" target="_blank" rel="noopener noreferrer">
         <div class="repo-card-icon" aria-hidden="true">📂</div>
         <h3>studied-errata/</h3>
         <p>273 manually categorized errata from Standards Track RFCs (2014–2025), organized by all 7 subtypes.</p>
-      </div>
-      <div class="repo-card">
+      </a>
+      <a class="repo-card" href="https://github.com/HIPREL-Group/RFCScope/tree/main/detected-bugs" target="_blank" rel="noopener noreferrer">
         <div class="repo-card-icon" aria-hidden="true">🐛</div>
         <h3>detected-bugs/</h3>
         <p>31 new ambiguity findings across 14 RFCs, each with a bug report, category, and confirmation status.</p>
-      </div>
-      <div class="repo-card">
+      </a>
+      <a class="repo-card" href="https://github.com/HIPREL-Group/RFCScope/tree/main/prompts" target="_blank" rel="noopener noreferrer">
         <div class="repo-card-icon" aria-hidden="true">💬</div>
         <h3>prompts/</h3>
         <p>System and user prompt templates for the Analyzer and Evaluator, for both inconsistency and under-specification detection.</p>
-      </div>
-      <div class="repo-card">
+      </a>
+      <a class="repo-card" href="https://github.com/HIPREL-Group/RFCScope/tree/main/RFCScope" target="_blank" rel="noopener noreferrer">
         <div class="repo-card-icon" aria-hidden="true">⚙️</div>
         <h3>RFCScope/</h3>
         <p>Full implementation of the RFCScope tool. See the README inside for setup and usage instructions.</p>
-      </div>
+      </a>
     </div>
     <div class="repo-actions">
       <a class="btn btn-dark" href="https://github.com/HIPREL-Group/RFCScope" target="_blank" rel="noopener noreferrer">⭐ View on GitHub</a>

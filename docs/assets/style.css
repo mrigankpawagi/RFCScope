@@ -383,8 +383,19 @@ section.section-bg-white { background: #fff; }
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   margin-top: 2rem;
+  align-items: stretch;
 }
 @media (max-width: 700px) { .results-grid { grid-template-columns: 1fr; } }
+
+/* When side by side, make pie chart match the height of the adjacent figure */
+@media (min-width: 701px) {
+  .results-grid .figure-block { display: flex; flex-direction: column; }
+  .results-pie-block img {
+    flex: 1;
+    object-fit: contain;
+    min-height: 0;
+  }
+}
 
 /* ── ERRATA CARDS ── */
 .errata-grid {

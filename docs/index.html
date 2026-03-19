@@ -237,7 +237,7 @@
       <div class="step-card">
         <div class="step-num" aria-hidden="true">1</div>
         <h3>Context Constructor</h3>
-        <p>Processes the RFC paragraph-by-paragraph to identify all references to other documents and retrieve the relevant content from those documents. For RFC references with a specific section number, it retrieves that section directly. For references without a section number, it uses semantic search to find the most relevant section. For non-RFC documents, it summarizes the referenced content. The context of a section is the aggregation of the contexts of all its paragraphs.</p>
+        <p>Processes the RFC paragraph-by-paragraph to identify all references to other documents and retrieve the relevant content from those documents. For RFC references with a specific section number, it retrieves that section directly. For references without a section number, it uses semantic search to find the most relevant section. For non-RFC documents, it summarizes the referenced content.</p>
       </div>
       <div class="step-card">
         <div class="step-num" aria-hidden="true">2</div>
@@ -247,7 +247,7 @@
       <div class="step-card">
         <div class="step-num" aria-hidden="true">3</div>
         <h3>Analyzer</h3>
-        <p>Processes one segment at a time, prompting an LLM to identify logical ambiguities within the segment and its context. The fine-grained taxonomy of ambiguity subtypes guides the LLM with definitions, detection strategies, and real illustrative examples drawn from the errata study. The Analyzer produces a candidate report for each detected ambiguity.</p>
+        <p>Processes one segment at a time, prompting an LLM to identify logical ambiguities within the segment. The fine-grained taxonomy of ambiguity subtypes guides the LLM with definitions, detection strategies, and real illustrative examples drawn from the errata study. The Analyzer produces a candidate report for each detected ambiguity.</p>
       </div>
       <div class="step-card">
         <div class="step-num" aria-hidden="true">4</div>
@@ -270,14 +270,14 @@
     <div class="section-label">Evaluation</div>
     <h2 class="section-title" id="results-title">Results</h2>
     <p class="section-desc">
-      Evaluated on the 20 most recent DNS-related Proposed Standard RFCs. RFCScope covers all seven ambiguity subtypes and significantly outperforms the only applicable baseline.
+      Evaluated on the 20 most recent DNS-related Proposed Standard RFCs. The Analyzer produced 281 initial candidate reports; the Evaluator filtered these down to 137; and manual review yielded 31 confirmed ambiguities across 14 RFCs — 17 inconsistencies and 14 under-specifications.
     </p>
     <div class="results-grid">
       <div class="figure-block">
         <img src="assets/img/rfc_errata_count.png" alt="Errata counts per RFC across pipeline stages" loading="lazy" />
         <div class="figure-caption">Errata counts at each pipeline stage across the 20 target RFCs. The Analyzer produced 281 initial reports; the Evaluator filtered these to 137; manual inspection yielded 31 final findings.</div>
       </div>
-      <div class="figure-block">
+      <div class="figure-block figure-padded results-pie-block">
         <img src="assets/img/error_cat_pie.png" alt="Distribution of detected bugs by category" loading="lazy" />
         <div class="figure-caption">Distribution of the 31 detected ambiguities across all seven subtypes — 17 inconsistencies and 14 under-specifications.</div>
       </div>
@@ -352,7 +352,7 @@ DNSSEC validation occurs</mark>...</pre>
 <section id="repo" aria-labelledby="repo-title" class="section-bg-white">
   <div class="container">
     <div class="section-label">Artifact</div>
-    <h2 class="section-title" id="repo-title">What's in this repository</h2>
+    <h2 class="section-title" id="repo-title">What's in the repository</h2>
     <p class="section-desc">All data, prompts, and code are publicly available to support reproducibility and future research.</p>
     <div class="repo-grid">
       <div class="repo-card">
@@ -378,7 +378,6 @@ DNSSEC validation occurs</mark>...</pre>
     </div>
     <div class="repo-actions">
       <a class="btn btn-dark" href="https://github.com/HIPREL-Group/RFCScope" target="_blank" rel="noopener noreferrer">⭐ View on GitHub</a>
-      <a class="btn btn-dark" href="https://ieeexplore.ieee.org/document/11334266" target="_blank" rel="noopener noreferrer">📄 Read the Paper</a>
     </div>
   </div>
 </section>

@@ -390,15 +390,10 @@ section.section-bg-white { background: #fff; }
 /* When side by side, make pie chart match the height of the adjacent figure */
 @media (min-width: 701px) {
   .results-grid .figure-block { display: flex; flex-direction: column; }
-  .results-grid .figure-block img {
-    flex: 1;
-    min-height: 0;
-    width: 100%;
-    object-fit: cover;
-  }
   .results-pie-block img {
     object-fit: contain;
-    background: #fff;
+    display: block;
+    margin: auto;
   }
 }
 

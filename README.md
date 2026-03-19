@@ -13,7 +13,7 @@ Internet protocol specifications, published as Requests for Comments (RFCs) by t
 
 We present the **first systematic study** of verified technical errata from Standards Track RFCs over the past 11 years, identifying seven distinct subtypes of logical ambiguities. Building on these insights, we introduce **RFCScope**, the first scalable framework for detecting logical ambiguities in RFCs. RFCScope employs large language models (LLMs) through a modular pipeline that constructs targeted cross-document context, partitions specifications to preserve semantic integrity, applies bug-type-aware prompts for detection, and filters out false positives using structured reasoning validation.
 
-![RFCScope Pipeline](site/assets/img/method_flow.png)
+![RFCScope Pipeline](docs/assets/img/method_flow.png)
 
 ---
 
@@ -50,7 +50,7 @@ RFCScope is a four-stage LLM pipeline:
 3. **Analyzer** — Uses bug-type-aware prompts and chain-of-thought reasoning to detect potential ambiguities across all seven subtypes.
 4. **Evaluator** — A second LLM pass independently re-validates each finding, rejecting hallucinated or out-of-scope reports before human review.
 
-![Context Constructor](site/assets/img/ctx_constructor_flow.png)
+![Context Constructor](docs/assets/img/ctx_constructor_flow.png)
 
 ---
 

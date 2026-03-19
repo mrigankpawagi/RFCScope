@@ -315,6 +315,12 @@ section.section-bg-white { background: #fff; }
 }
 
 /* ── TAXONOMY TABLE ── */
+.taxonomy-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+}
 .taxonomy-table {
   width: 100%;
   border-collapse: collapse;
@@ -322,15 +328,15 @@ section.section-bg-white { background: #fff; }
   background: var(--card-bg);
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: var(--shadow);
 }
-.taxonomy-table caption {
+.taxonomy-table-caption {
   caption-side: top;
   text-align: left;
   font-size: 0.8rem;
   color: var(--muted);
   padding: 0 0 0.5rem;
   font-style: italic;
+  display: block;
 }
 .taxonomy-table th {
   background: var(--navy);
